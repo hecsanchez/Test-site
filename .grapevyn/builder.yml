@@ -1,0 +1,36 @@
+
+components:
+  navbar:
+    id: navbar
+    type: Navigation
+    props:
+      logo: "/logo.svg"
+      links:
+        - label: Home
+          path: /
+        - label: About
+          path: /about
+        - label: Contact
+          path: /contact
+    styles:
+      padding: "1rem"
+      backgroundColor: "transparent"
+  
+  hero:
+    id: hero
+    type: Hero
+    props:
+      title: "Welcome to Test site"
+      subtitle: "Your amazing website starts here"
+      cta:
+        label: "Get Started"
+        path: "/about"
+    styles:
+      padding: "4rem 0"
+      backgroundColor: "#f8fafc"
+      textAlign: "center"
+
+layout:
+  home:
+    - navbar
+    - hero
